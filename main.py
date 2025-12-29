@@ -63,7 +63,7 @@ question_rect = question_text.get_rect(center=(WIDTH/2, HEIGHT/2))
 answers = []
 for index, answer in enumerate(questions[question_index].get('options')):
     text = SMALL_FONT.render(answer, True, LIGHT_GREY)
-    rect = text.get_rect(midleft=(WIDTH*0.25, HEIGHT/2 + (index + 1) * 30))
+    rect = text.get_rect(midleft=(WIDTH*0.1, HEIGHT/2 + (index + 1) * 30))
     answers.append([text,rect])
 
 
@@ -125,7 +125,7 @@ def update_question():
         answers = []
         for index, answer in enumerate(questions[question_index].get('options')):
             text = SMALL_FONT.render(answer, True, LIGHT_GREY)
-            rect = text.get_rect(midleft=(WIDTH*0.25, HEIGHT/2 + (index + 1) * 30))
+            rect = text.get_rect(midleft=(WIDTH*0.1, HEIGHT/2 + (index + 1) * 30))
             answers.append([text,rect])
 
 
